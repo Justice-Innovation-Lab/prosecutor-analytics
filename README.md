@@ -1,24 +1,39 @@
-# Prosecutor Template Dashboards
+# Prosecutor Analytics
 
-This is a repository of template dashboards using Power BI that is intended for prosecutor offices interested in publishing data externally or 
-internally. These template dashboards are intended to help resource constrained offices and those looking for best practices to be able to quickly
-set up dashboards once data is prepared. This repository was created and is maintained by [Justice Innovation Lab](https://https://www.justiceinnovationlab.org/) and we welcome suggested changes and additions via github PR.
+This is a repository for analysts interested or working in prosecutor data and 
+for prosecutors with an analytical interest. This repository was created and is 
+maintained by [Justice Innovation Lab](https://https://www.justiceinnovationlab.org/)and we welcome suggested changes and additions via github PR.
 
-Since 2015, prosecutor offices across the US have been pursuing greater transparency through the sharing of data regarding prosecution. In order
-to share data publicly, offices need to determine what technology the office has access to in order to host the data and any local privacy laws
-that affect what data can be shared. After addressing these issues, a jurisdiction needs to determine what data to share, namely what metrics
-will be presented. A number of pioneering prosecutor offices as well as nonprofit organizations and universities have created different, though
-largely similar metrics for the public. The template public-facing dashboards in this repository are designed around the [Prosecutor Performance
-Indicator](https://prosecutorialperformanceindicators.org/#indicators) framework, but can be repurposed as needed.
+Since about 2015, many prosecutor offices began pursuing analytics to better 
+understand crime in their communities, to monitor office performance, and to 
+increase accountability to the public. While behind other public services such 
+as education and health, this trend shows a real initiative to improve service
+and included pioneering offices hiring internal and external researchers. While
+the number of researchers, analysts, and prosecutors in the space is growing, it
+is still relatively small. This repository is an effort to provide a space for 
+our community and to give a starting place for those starting out.
 
 ## Repository Organization
+This repo is intended to (1) provide resources that experienced analysts have 
+developed for use by new analysts and offices and (2) through the GitHub 
+discussions feature to provide a forum for continued discussions about 
+prosecutor analytics.
 
-- guides: for how to use the templates.
-- public: workbooks with template dashboards for external use.
-- internal: workbooks with tempate dashboards for internal use.
-- data: sample data for template dashboards.
+### Resource Folders
 
-## Other helpful resources
+    - dashboarding: Guides, templates, and a list of current prosecutor 
+    dashboards.
+    - starting-out: Guides for analysts to understand the criminal justice 
+    process and for getting and understanding prosecutor data. Guides for 
+    prosecutors for basic stats and analysis concepts.
+    - academic-research: A resource list of interesting prosecutor-related 
+    research.
+    - common-code: There are many repeated coding problems that prosecutor
+    analysts face, here you can find code in various languages that addresses
+    many of the most common issues.
 
-Justice Innovation Lab maintains the following [list](https://docs.google.com/spreadsheets/d/1CbHUaH_87Pv5LFx0ygVNMVYL3ExeGHVmG2526_b86s4/edit#gid=0) of publicly accessible prosecutor dashboards. If you would like to suggest an edit to the list,
-including an addition, please send an email to rory.pulvino@justiceinnovationlab.org
+### Discussions
+GitHub repos now include a discussions feature you can find along the top bar
+of the repo. Whereas issues are a place to raise technical problems, discussions
+is meant as a public forum to post questions and have... discussions.
+

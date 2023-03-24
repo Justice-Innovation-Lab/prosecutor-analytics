@@ -17,7 +17,8 @@ our community and to give a starting place for those starting out.
 This repo is intended to (1) provide resources that experienced analysts have 
 developed for use by new analysts and offices and (2) through the GitHub 
 discussions feature to provide a forum for continued discussions about 
-prosecutor analytics.
+prosecutor analytics. Please note the [community discussion guidelines](#community-discussion-guidelines) before
+posting.
 
 ### Resource Folders
 
@@ -36,4 +37,14 @@ prosecutor analytics.
 GitHub repos now include a discussions feature you can find along the top bar
 of the repo. Whereas issues are a place to raise technical problems, discussions
 is meant as a public forum to post questions and have... discussions.
+
+#### Community Discussion Guidelines
+
+Please start by posting something about yourself in the welcome post. It's a 
+good practice for us all to learn a little bit about one another. In posting to
+a discussion, please note that this repository is intended to be a community for
+those interested in researching, understanding, and improving public safety and
+the legal system. Posts that attack individuals or groups will not be tolerated
+and the maintainers of this repo reserve the right to remove comments and 
+individuals.
 

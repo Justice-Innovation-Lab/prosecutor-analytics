@@ -21,14 +21,14 @@ prosecutor analytics.
 
 ### Resource Folders
 
-    - dashboarding: Guides, templates, and a list of current prosecutor 
+- dashboarding: Guides, templates, and a list of current prosecutor 
     dashboards.
-    - starting-out: Guides for analysts to understand the criminal justice 
+- starting-out: Guides for analysts to understand the criminal justice 
     process and for getting and understanding prosecutor data. Guides for 
     prosecutors for basic stats and analysis concepts.
-    - academic-research: A resource list of interesting prosecutor-related 
+- academic-research: A resource list of interesting prosecutor-related 
     research.
-    - common-code: There are many repeated coding problems that prosecutor
+- common-code: There are many repeated coding problems that prosecutor
     analysts face, here you can find code in various languages that addresses
     many of the most common issues.
 

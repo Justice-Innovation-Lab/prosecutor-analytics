@@ -21,14 +21,14 @@ prosecutor analytics.
 
 ### Resource Folders
 
-    - dashboarding: Guides, templates, and a list of current prosecutor 
+- [dashboarding](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/dashboarding): Guides, templates, and a list of current prosecutor 
     dashboards.
-    - starting-out: Guides for analysts to understand the criminal justice 
+- [starting-out](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/starting-out): Guides for analysts to understand the criminal justice 
     process and for getting and understanding prosecutor data. Guides for 
     prosecutors for basic stats and analysis concepts.
-    - academic-research: A resource list of interesting prosecutor-related 
+- [academic-research](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/academic-research): A resource list of interesting prosecutor-related 
     research.
-    - common-code: There are many repeated coding problems that prosecutor
+- [common-code](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/common-code): There are many repeated coding problems that prosecutor
     analysts face, here you can find code in various languages that addresses
     many of the most common issues.
 

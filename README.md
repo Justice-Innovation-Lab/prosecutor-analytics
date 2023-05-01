@@ -27,8 +27,8 @@ posting.
 
 - [dashboarding](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/dashboarding): Guides, templates, and a list of current prosecutor 
     dashboards.
-- [starting-out](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/starting-out): Guides for analysts to understand the criminal justice 
-    process and for getting and understanding prosecutor data. Guides for 
+- [starting-out](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/starting-out): Guides for analysts to understand the [criminal justice 
+    process and for getting and understanding prosecutor data](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/starting-out/criminal_justice_explainer). Guides for 
     prosecutors for basic stats and analysis concepts.
 - [academic-research](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/academic-research): A resource list of interesting prosecutor-related 
     research.

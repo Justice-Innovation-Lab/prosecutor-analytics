@@ -1,0 +1,68 @@
+---
+title: Stages of a Case
+edited: '10-19-2021'
+---
+<section id="introduction">
+
+## Introduction
+From arrest to prosecution to sentencing, there are pivotal stages for all criminal proceedings that all jurisdictions share; though what parties are involved, language describing each event, and the exact details of each stage differ by jurisdiction. This criminal justice explainer is a living document that is meant as a brief introduction to the criminal justice system and its data. Often lawyers and law enforcement assume in conversation that those working with them understand and know how the system works and that there is uniformity across jurisdictions. Similarly, those working with data can often make assumptions about how the data was created, the intention of the creators, and that non-technical individuals understand how data is structured. All of this leads to misunderstandings that this document aims to mitigate.
+As a general matter, **sections X to Y** outline what happens after an individual is stopped by the police - we are avoiding the term arrest as that has a specific legal meaning that confers certain rights to an individual - in order to help data analysts/scientists and the general public understand the process. This guide is not meant as comprehensive as there are plenty of great resources out there already, but it is intended as a process walk through of what actually happens in the criminal justice process. Below is a diagram from the [Bureau of Justice Statistics](https://bjs.ojp.gov/media/image/45506) of the various stages of that process:
+
+!["Criminal Justice System flow chart"](/static/images/justice-system.jpg)
+ 
+Most jurisdictions also have their own diagrams available on their websites like [SOL9's Roadmap to Justice](https://www.scsolicitor9.org/files/Roadmap-to-Justice.pdf).
+  
+**Sections X to Z** then outline the various data points that are common to the criminal justice system. These sections are intended to help lawyers and data analysts/scientists speak to one another about data and give a common language.
+</section>
+
+<section id="arresting-a-person">
+
+## Arresting a Person
+Police may stop an individual if they have reasonable suspicion. To make an arrest, police officers must have probable cause[^1] that the individual has committed some crime. This probable cause standard is more than the reasonable suspicion[^2] needed to stop someone, but a lower threshold than what a prosecutor needs to prosecute a case. Prosecutors are expected to prove cases beyond a reasonable doubt. This difference in threshold is what leads to some cases being dismissed by prosecutors and never prosecuted. Offices have different practices regarding whether they will prosecute a case even if they cannot meet their burden before proceeding, but most will only prosecute if they believe they can meet that higher standard.
+
+Once an individual is stopped there’s a bunch of legal decisions that outline what constitutes an arrest, but in general you can think of an arrest as happening when the officer takes the person into custody. Officers generally stop someone based on criminal behavior they observe - sometimes using a pretextual stop[^3] - , or because of a call for service.
+
+After an individual is arrested, they are generally taken to jail (jails are different from prisons, which are where people are generally sent to serve longer sentences) where they are booked into the system. Jails are often maintained by different law enforcement agencies than the police, often sheriff departments. Arrestees might also be diverted at the point of arrest in jurisdictions with [Law Enforcement Assisted Diversion (LEAD) programs](https://www.leadbureau.org/&sa=D&source=docs&ust=1671122494724927&usg=AOvVaw0xbHC6j8TySOw9IotGEGtv)[^4]. 
+
+After booking:
+* Police present the case to prosecutor offices to determine if the case should be prosecuted. The presentation of the case varies by jurisdiction. In some jurisdictions, the police’s incident report is automatically transmitted to the prosecutor office into their Case Management System (CMS)[^5] to allow the office to begin reviewing the evidence. Often prosecutors will go on to meet with officers for clarification or to request more evidence. In jurisdictions where the incident reports are not automatically transferred, the incident reports have to be transmitted in some way - often via email. The reports are often then manually uploaded to the CMS or, in some cases, are only stored as print-outs in a physical file.
+* The arrestee also appears before a bond or detention court. Generally, this is required within 24 to 72 hours of an individual being arrested. At these hearings, prosecutors may be present depending on jurisdiction and may argue for a certain bond or detention determination. The judges for these cases are setting bond or making a detention determination. 
+* “Bond” and “bail” are often used interchangeably, but technically they are different things.  Bail is the provisional release of the accused charged with a crime awaiting trial by the deposit of security. A bond is an agreement in which a third party, i.e. bond agent or bondsman, accepts responsibility for the “bail” of the person under indictment. The person under indictment generally pays the bondman a non-recoverable amount (typically 5-10% of bail).  If a defendant cannot afford the bail amount, they are often detained pending trial.   
+* Sometimes, in lower level offenses, courts will set a “personal recognisance bond” (PR bond), that only requires the defendant to commit to appearing in court.
+* In cases where a prosecutor believes that the defendant is a danger to the community or will fail to appear in court, they can ask the defendant to be detained without bail.
+</section>
+
+
+<section id="grand-jury">
+
+### Grand Jury
+[Grand juries](https://www.uscourts.gov/services-forms/jury-service/types-juries) are special juries that are **empaneled** for a given length of time (usually 30 days) to review evidence and determine if an indictment[^6] is appropriate in a given case. The grand jury is reviewing the evidence to see if it meets the probable cause standard to issue an [indictment](https://www.justice.gov/usao/justice-101/charging). Since the grand jury is pre-indictment, their work is often done **before** an individual is even arrested. For this reason, among others, grand jury work is private, not open to the public, and does not include the accused or their attorney. These juries are also larger than the typical trial jury.
+
+</section>
+
+<section id="prosecutor-review-starts">
+
+## Prosecutor Begins Reviewing A Case
+Once a case arrives at a prosecutor’s office, some offices have a screening unit of prosecutors that reviews a case and determines whether the case should be dismissed immediately, diverted, or moved on to a prosecuting attorney. Other offices do not have a screening unit and instead send cases directly to prosecuting attorneys who make the decision of whether to dismiss, divert, or prosecute a case.
+
+Cases can be dismissed for any number of reasons, but the most common are:
+* Insufficient evidence/lack of evidence 
+* Elements not met - here elements refers to the elements of the crime, which are the specific actions that legally define/describe a crime.
+* Victim/witness uncooperative/recant - generally affects DV cases. NB - DV cases are notoriously difficult to prosecute and are by far the most commonly dismissed cases.
+* Prosecutorial discretion/interest of justice - this is a common, ambiguous code that prosecutors use for everything from a defendant has no prior record and seems a good person to there are issues with the arresting officer i.e. the officer is on a [Brady list](https://en.wikipedia.org/wiki/Brady_disclosure).[^7]
+* Other reasons a case may be dismissed: death of a defendant; defendant found not competent to stand trial; case moved to another court. 
+
+The above dismissals are initiated by the prosecutor. Nolle Prosequi is the formal term for this, but also shortened to Nol Pros, Nolle, and other iterations. Some types of dismissals can be determined immediately upon reviewing the case, e.g. elements not met; whereas other reasons for dismissal may arise over time and after prosecution has begun.
+
+**NB - judges may also dismiss cases and generally do so if they find the prosecution’s evidence lacking; this is most likely to happen at a preliminary/probable cause hearing.**
+
+
+</section>
+
+[^1]: Probable Cause: There was at least a 51% chance that you can show the individual did some illegal act.
+[^2]: Beyond a Reasonable Doubt: This is the highest burden of proof (yes, there’s more than probable cause and beyond a reasonable doubt). As a percentage, it’s supposed to be quite high and there should not be any other plausible interpretation of the evidence.
+[^3]: Pretextual Stop: The term refers to when the police stop an individual with probable cause for a minor infraction (such as a broken taillight), but the real purpose of the stop was to investigate for other illegal conduct (such as drug violations or weapons offenses).  So long as the officer has probable cause that any violation has occurred, they are legally authorized to make the stop.  Officers then use the stop to develop evidence of other violations (such as smelling drugs) that then provides new probable cause to conduct a search of the vehicle. 
+[^4]: Law enforcement assisted diversion: Often used for juveniles, these programs allow police to take an individual directly to some diversion service such as a drug rehab center rather than to jail or a detention center. While charges may be brought against the person eventually, the general idea is to enable the person to avoid a formal arrest and the incident should never reach the prosecutor.
+[^5]: Case Management System: A computer program used to track data. For prosecutors, these systems are generally organized around cases and are used by the offices to track defendants, victims, and the charges of a case.
+[^6]: Indictment: A formal notice to an individual that law enforcement believes that they committed a crime.
+[^7]: Brady list: A Brady violation is a legal violation by the state in failing to turn over exculpatory evidence to a defendant in a criminal matter. It is named after a SCOTUS case Brady v. Maryland. Most often this plays out in police failing to disclose to prosecution and thus defense attorneys evidence pertinent to the innocence of a defendant. This is a Brady violation and can lead to the integrity of the officer being questioned. Prosecutor offices will form Brady lists then of officers with past violations or reputations.

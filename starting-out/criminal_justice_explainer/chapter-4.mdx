@@ -5,13 +5,16 @@ edited: '05-01-2023'
 <section id ="introduction">
 
 # Introduction
-This is a guide to common data points and terminology around those data points in prosecutor analysis.
+This is a guide to common data points and terminology around those data points in prosecutor analysis. The first few sections are intended for prosecutors and the non-technical to become acquanted with analytical/statistical concepts. The later sections are for describing various common metrics common to the prosecutorion space. For a fuller discussion of these and examples of such metrics, visit the [Prosecutor Performance Indicators](https://prosecutorialperformanceindicators.org/#indicators) (PPI).
   
  ## Table of Contents
  - [Chapter 1 - Stages of a Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx)
  - [Chapter 2 - Cases to Know](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-2.mdx)
- - [Chapter 3 - Data Per Agency](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx)
+ - [Chapter 3 - Systems and Data Per Agency](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx)
  - [Chapter 4 - Data Points](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-4.mdx)
+    - [Units of Observation](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-4.mdx#unit-of-observation)
+    - [Common Concepts](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-4.mdx#common-concepts)
+    - [Common Metrics](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-4.mdx#common-metrics)
  - [Chapter 5 - Diversions](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-5.mdx)
   
 </section>
@@ -20,3 +23,51 @@ This is a guide to common data points and terminology around those data points i
 <section id="to-do">
 
 </section>
+
+<section id="unit-of-observation">
+  
+## Units of Observation
+There are three common units of observation for defendants in criminal justice data: charge (or warrant), case (or dci/def_case_index), defendant - in order of granularity. 
+
+For some analysis we may also focus on the prosecutor or prosecutor unit, the arresting officer or agency, or the judge as the unit of observation.
+Important Data Points
+	Dates
+Arrest, Filing, and Disposition date are the most common and important dates in prosecutorial data. Which date you choose for a given graphic will depend on the point of the graphic, but you should consider this closely as the implementation of CMS systems often creates cuts in the data such that you may not have any arrests before x date or any dispositions before y date, thus your data is strangely truncated for certain periods.
+
+</section>
+
+<section id="common-concepts">
+  
+ ## Common Concepts
+
+### Charge Ranking and Grouping
+One of the most challenging and important initial tasks working with a jurisdiction is to group charge title/statutes into meaningful categories. Ideally, we create a few aggregations that highlight different important elements of crimes. Jurisdictions often don’t initially understand the groupings, want to have many categories, and want to flexibly change the categories depending on how they are feeling that day or the facts of some cases. We want to standardize this process as much as possible and highlight specific charge categories and characteristics that are salient to racial justice (we lay out our principles here.)
+
+### Controls
+There are several data fields that we think are important for establishing controls if we do any modeling (i.e. if we want to assess statistically significant differences across certain groups of defendants, charges, cases, etc). Some of these controls include a defendant’s race and gender, whether a defendant had prior arrests, whether a defendant had prior convictions, and how old the defendant is.
+ </section>
+
+<section id="common-metrics">
+  
+## Common Metrics
+There are a number of other nonprofits that have sprung up recently that also work with prosecutor agencies to bring their data to life. The two largest are [Measures for Justice](https://www.measuresforjustice.org/portal) (MFJ) and the [Prosecutor Performance Indicators](https://prosecutorialperformanceindicators.org/#indicators) (PPI). Both have developed a standard set of metrics that they believe indicate the ‘health’ of a criminal justice system - you should visit their websites and review. In general though, the below metrics are the most common you will hear discussed in prosecutor offices.
+
+### Dismissal Rate
+This is the percentage of cases that are dismissed compared to the number of cases prosecuted. For the most part, cases or charges dismissed as part of a plea should be excluded, as are diverted cases. At times we also just focus on those that are dismissed by the prosecutor or those dismissed by the judge – judicial dismissals are a point of concern for some jurisdictions as they interpret it as a reprimand from the judge for even bringing the case.
+
+### Conviction Rate
+Conviction rates are the percentage of cases that result in guilty outcomes. This can be due to a jury trial finding the defendant guilty, a bench trial, or the defendant accepting a guilty plea. Typically, diversion involve an agreement to forego prosecution if the defendant successfully completes a program or agreement terms. If that happens, there is not conviction so this does not factor into the conviction rate.
+
+### Time to X
+There’s are several metrics around time such as number of days until filing/dismissaldisposition, etc. There are also metrics around time to bond out a defendant or talk to a victim - time variables that relate to human relations that are necessary in a case.
+	
+### Recidivism
+Recidivism, the rate of formerly incarcerated people re-offending, is the most common statistic used to measure the ‘success’ of law enforcement agencies in improving public safety. This statistic is deceptively hard to define as it can be calculated based on re-arrest or on re-conviction. It also often ismeasured from various starting dates e.g. do you count recidivism from the date a person was arrested? The date the case was disposed? And so on.
+	
+### Case Load
+Case load is the number of cases handled in a given period by the entire jurisdiction, a particular unit, or an individual attorney.
+
+### Ratio of Arrested to Population 
+Comparing the percentage of people in different groups as a percentage of the total arrest population vs. the total population of the county is another common metric. This is a useful metric in identifying potential disparities by race, gender, age, or other features.
+  
+  </section>

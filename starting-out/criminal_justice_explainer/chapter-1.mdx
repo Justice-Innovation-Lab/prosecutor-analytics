@@ -22,7 +22,7 @@ Most jurisdictions also have their own diagrams available on their websites like
    - [Diverting Instead Of Dismissing/Prosecuting](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#diverting-instead-of-dismissing-prosecuting)
    - [Prosecuting A Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#prosecuting-a-case)
    - [Disposing/Resolving A Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#disposing-resolving-a-case)
-   - [Postconviction Help](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#postconviction-help)
+   - [Post-conviction Help](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#post-conviction-help)
  - [Chapter 2 - Cases to Know](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-2.mdx)
  
 </section>
@@ -74,32 +74,79 @@ The above dismissals are initiated by the prosecutor.  Nolle Prosequi is the for
 </section>
 
 <section id="courts-of-first-appearance">
+ 
  ### Courts Of First Appearance
+ Courts of first appearance vary significantly from jurisdiction. Everything from the timing, to the process, to terminology, to actors involved can all be different between jurisdictions. Given this diversity, the author below presents a generalized outline of these courts based on experience in 4 jurisdictions.
  
  #### Preliminary Hearings
+ A preliminary hearing is held after an individual has been arrested. A prosecutor must prove to the judge that there is probable cause to hold a trial. Where a judge does find probable cause, the case proceeds and is “bound over”. In finding probable cause, the judge may change the charges in the case depending on the evidence, including by reducing the severity of the charges. Where a judge does not find probable cause they may dismiss the case.
  
  #### Magistrate Courts/Judges
+ In some states, such as Georgia,  magistrate judges will handle most pre-trial matters such as the preliminary hearing, arraignment of charges, and bail. Magistrate courts often handle lower-level criminal and civil cases such as approving warrants, county ordinances, and smaller civil claims. In some states, you do not need a law degree to become a magistrate judge.
  
  </section>
 
 <section id="whats-a-case-and-whats-a-charge">
+ 
  ### What's A Case And What's A Charge
+ Cases are made up of charges. A case against an individual generally groups together all the criminal conduct and thus charges from a single incident. This can sometimes be a tricky as it’s debatable where one incident ends and the next begins. For instance, where an individual steals from multiple people at the same time all the charges may be wrapped together into a single case whereas if the individual commits a spree of thefts over time these might be considered separate cases.
+
+Charges are defined by law and consist of ‘elements’. Elements are the component parts of a criminal charge that a prosecutor has to prove. For example, the general definition of burglary is “The unlawful entry of a building or structure with the intent to commit a felony therein.” The elements of burglary are:
+* Unlawful entry; 
+* Of a building or structure;
+* With the intent to commit a felony therein.
+A prosecutor then uses facts of the case to demonstrate each element e.g. a person picking a lock would be evidence of an unlawful entry.
+
  </section>
  
  <section id="diverting-instead-of-dismissing-prosecuting">
+ 
  ### Diverting Instead Of Dismissing/Prosecuting
+ If a prosecutor does not immediately dismiss a case, they may divert a case. Diversion generally falls into two categories: true diversion and alternatives to traditional prosecution. 
+* __True diversions__ are programs where charges are never filed against the arrestee - sometimes referred to as pre-trial diversion (PTI). In these cases, the diversion can be as nominal as allowing the arrestee to ‘cure’ the harm, e.g. present a driver’s license when facing an arrest for driving without a license. There are more intensive diversions, such as diversions to counseling or neighborhood courts  that remove the arrestee from the prosecution process (though the arrestee can generally be prosecuted at a later date for the crime if they fail the diversion).
+* __Alternatives to prosecution__ are more commonly thought of as diversions. Most often these are alternative courts, such as drug court, mental health court, or veterans court. In general, for an arrestee to enter into such a program they are offered diversion as part of a plea negotiation that includes admitting guilt to the crime. The incentive for  admitting guilt is that if the arrestee successfully meets the criteria laid out by the court, the original charge is dismissed and possibly expunged. Most alternatives to prosecution are considered to be under-utilized for a host of reasons - overly burdensome process compared to simply pleading guilty, poor coordination between prosecutors, defense attorneys, and the programs themselves as to eligibility and space, etc.
+
  </section>
  
  <section id="prosecuting-a-case">
+ 
  ### Prosecuting A Case
+ Where a prosecutor decides to prosecute a case, they indict (file charges) against an arrestee. These charges may differ from those the defendant was arrested for based on evidence and elements of different charges.  As such, most data consists of arrest charges and filed charges (and disposition charges which we’ll get to). In some frustrating jurisdictions, arrest charges do not align with prosecution charges, i.e., the codes that law enforcement uses in labeling what the offense was are completely different from the codes that prosecutors use  to prosecute.
+
+After deciding to prosecute a case, the prosecutor and defense attorney will often negotiate a plea where the defendant admits guilt to some charges. In rare instances, cases will go to trial (only 2-3% of cases go to trial).  Most cases  end in conviction on at least some charges. Plea negotiations are often a black box as lawyers are not in the habit of entering offers in a database.  Rather, plea negotiations happen outside any official record. They are a very important part of the system and add a layer of complexity to any analysis as jurisdictions approach them in different ways. They also often result in plea dismissals - a unique type of dismissal that we generally don’t count toward dismissal rate. (A plea dismissal is when a count or counts are dismissed in exchange for the defendant pleading guilty to another count.)
+ 
  </section>
  
  <section id="disposing-resolving-a-case">
+ 
  ### Disposing/Resolving A Case
+ After a case ends in a plea, a trial, or a dismissal, a case is considered disposed of by the prosecutor.  Diversions are trickier as offices generally consider a case, once diverted, to be disposed in some sense, but the case is not really fully disposed until the individual either successfully completes the diversion or is unsuccessful and the office then either prosecutes or dismisses the case, which represents the final disposition.
+ 
+ #### Sentencing
+ Dispositions where the defendant is found guilty then move on to the sentencing phase. Sentencing is complex in that it generally involves the judge, prosecutor, and defense, as well as restrictions laid out in legislation, to determine a defendant’s  punishment. In most cases, defendants can be sentenced to a combination of the following:
+* Incarceratory/custodial sentence - The defendant here will either go to prison, or in some cases, may return to jail.  A defendant may be sentenced to incarceration, but receive credit for the time they spent in jail during the prosecution. This credit reduces the amount of time they must serve after the case and, in certain circumstances, may be the entirety of their sentence (“time served” sentences).
+* Exposure - The maximum time a defendant can be incarcerated on a given sentence.  Often this number is longer than the actual sentence as defendants are sentenced to serve, for example,  5 years with a maximum exposure of 10 years if they violate their probation upon release. Some sentences come with only exposure and probation, i.e., a defendant is sentenced to 3 years probation with 2 years of exposure to incarceration if they violate that probation.
+* Probation - The individual is not in jail or prison, but is subject to probation conditions.
+* Fines
+
+All criminal offense codes come with a range of eligible punishment that is laid out in legislation, i.e.,  a “sentencing range” of 0-5 years. The maximum allowable sentences is typically defined by statute.  Some offenses also have a minimum sentence that a judge is required by law to give a defendant. Where charges have a minimum, this is generally referred to as a mandatory minimum.
+ 
+Depending on the prosecutor CMS, court database, and data entry practices, sentences may be entered at the charge level – the ideal – or at the case level. Where sentences are entered at the case level, this can cause confusion for multi-charge cases as to what aspect of the sentence is connected to a particular  charge.
+ 
+Where defendants are convicted on multiple charges each charge may be assigned its own sentence. Where there are multiple sentences that involve incarceration those sentences may be served concurrently or consecutively. Concurrent sentences mean the defendant essentially serves only the length of the longest sentence since all sentences are being served at the same time. Consecutive sentences mean the defendant serves the sum of all the sentences. Whether a defendant is sentenced consecutively or concurrently depends on local rules, practice, and often the judge's choice. Some sentences are required by statute to be served consecutively.
+ 
+This reader does not cover the juvenile system, but suffice to say it is largely the same structure, but with a much greater emphasis on diversion and alternatives to prosecution and less incarceration.
+
  </section>
  
  <section id="postconviction-help">
- ### Postconviction Help
+ 
+ ### Post-conviction Help
+ There are a number of ways people that are arrested or that are convicted of a crime can later clear their record. Most often, these post-case remedies are referred to as sealing and/or expungement. What these terms specifically mean, the process for receiving the remedy, and the actors involved varies from jurisdiction to jurisdiction. In general though:
+* Sealed records prevent the public from accessing the record, usually this only affects background checks. This does not generally prevent law enforcement from viewing the record.
+* Expunged records generally means deletion of the case from the record. In some cases this might be implemented such that all records of the case are deleted, in other cases just that it cannot be viewed, even by arresting agencies, without some specific purpose.
+While both these remedies are very important, very few jurisdictions have thought through and have an effective process for implementing, especially at a technical level of removing or hiding data in the database from specific users. Sealed and expunged cases often thus still show up on background checks and are seen by arresting agencies and prosecutors if an individual is arrested again.
+
  </section>
  
 [^a]: For a fuller description of arrests please read Alexandra Natapoff’s Crime Without Punishment, specifically Chapter 3 which does an excellent job describing standard policing while including appropriate legal references.

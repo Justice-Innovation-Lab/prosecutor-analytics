@@ -1,18 +1,23 @@
 ---
-title: Data Per Agency
+title: Systems And Data Per Agency
 edited: '05-01-2023'
 ---
 <section id ="introduction">
 
 # Introduction
-Most criminal justice agencies use third-party vendors for software to collect data. Many of the legacy systems lock data away and only allow for agencies to access data enmasse through either pre-built reports or by making requests to the vendor. Pre-built reports may return the data in a number of formats, including pdfs, that make manipulating the data difficult. These pre-built reports as well as requests to vendors rarely include complete disclosure of how the data was gathered i.e. what the specifics of the joins and filtering were and most agencies are unaware that their data is stored in databases with multiple tables that requires expertise to properly merge and gather.
+Most criminal justice agencies use third-party vendors for software to collect data. Many of the legacy systems lock data away and only allow for agencies to access data enmasse through either pre-built reports or by making requests to the vendor. Pre-built reports may return the data in a number of formats, including pdfs, that make manipulating the data difficult. These pre-built reports as well as requests to vendors rarely include complete disclosure of how the data was gathered i.e. what the specifics of the joins and filtering were and most agencies are unaware that their data is stored in databases with multiple tables that requires expertise to properly merge and gather. If you're interested in discussing prosecutor case management systems, head over to [this discussion](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/discussions/3).
 
 Whether data systems across criminal justice agencies are linked such that incident reports from police are pushed directly to prosecutor agencies and the courts is jurisdiction dependent. Some jurisdictions also have a Criminal Justice Coordinating Council (CJCC) or similarly named body that is intended to help with coordination across agencies. These inter-agency bodies are often responsible for figuring out data integration, but often have little power and individual agencies disregard them when they want.
 
  ## Table of Contents
  - [Chapter 1 - Stages of a Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx)
  - [Chapter 2 - Cases to Know](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-2.mdx)
- - [Chapter 3 - Data Per Agency](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx)
+ - [Chapter 3 - Systems And Data Per Agency](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx)
+   - [Police Data Systems](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx#police-data-systems)
+   - [Prosecutor Data Systems](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx#prosecutor-data-systems)
+   - [Court Data Systems](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx#court-data-systems)
+   - [Detention Data Systems](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx#detention-data-systems)
+   - [Mental Health Data Systems](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-3.mdx#mental-health-data-systems)
  - [Chapter 4 - Data Points](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-4.mdx)
  - [Chapter 5 - Diversions](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-5.mdx)
   
@@ -21,6 +26,46 @@ Whether data systems across criminal justice agencies are linked such that incid
 
 <section id="police-data-systems">
 
-# Police data systems
+## Police data systems
 Data for police departments is generally retained in at least two to three, though often more, databases - CAD, RMS, and possibly a FCC database.
+ 
+* __CAD__: Calls for service and as such is often shared across emergency service agencies like fire departments. This directs officers where to go.
+
+* __RMS__: Report management system where police enter incident reports describing a criminal incident. In some cases, data here is entered only after an arrest is made, but in most cases, incidents can be recorded here pre-arrest as an officer investigates a crime. This is the main police database.
+
+* __FCC__: Sometimes also called Field Interview Cards (FIC) these cards became popular for police to record any time they stopped an individual. Many PDs initially (and some still do) used index cards to notate simple information about an individual they stopped such as race, gender, approximate age, reason for the stop, etc.
+ 
+</section>
+
+<section id="prosecutor-data-systems">
+ 
+ ## Prosecutor Data Systems
+ Prosecutor agencies have case management systems (CMS), like Karpel, where they enter details for the case. Generally, the data points correspond to the different stages of a case, outlined below.
+ 
+ [insert image]
+ 
+ __Case Management System__: While Karpel is the most widely used CMS in the country, many of the largest jurisdictions use other vendors or have custom built systems. Few jurisdictions have data analysts and are relegated to using native report features, if they exist, that may just output pdfs or csvs of cases without any control over columns, filters, etc. One of JIL’s main pain points is extracting data in its entirety from these systems – we always want to start with all the rows and all the columns.
+ 
+After extracting the data, JIL needs to map the data from the backend to the front end. In good systems this mapping is at least done to the extent that it is easy to tell what column from the backend corresponds to what field on the front end that has been filled. But the real challenge in this mapping is showing prosecuting agencies what the data looks like en masse. Often this can mean showing them just how many cases appear to still be open because someone forgot to enter a closed date or showing them how many cases have been dismissed for each dismissal reason at which point a jurisdiction realizes that people have been misinterpreting a dropdown selection for dismissals for years.
+ 
+Another main objective of JIL is to determine how a jurisdiction enters data. This means understanding who is entering the data - if it’s prosecutors, paralegals, or a combination of people that are responsible for entering data and when this data is entered - is it generally entered when the data is created i.e. in the court room or is it a delayed process where a prosecutor hands a sheet of paper to a paralegal to enter later? Are there accountability measures in place for accuracy and completeness?
+
+ </section>
+
+<section id="court-data-systems">
+ 
+ ## Court Data Systems
+ 
+</section>
+
+<section id="detention-data-systems">
+ 
+ ## Detention Data Systems
+ 
+</section>
+
+<section id="mental-health-data-systems">
+ 
+ ## Mental Health Data Systems
+ 
 </section>

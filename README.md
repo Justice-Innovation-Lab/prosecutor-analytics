@@ -2,7 +2,10 @@
 
 This is a repository for analysts interested or working in prosecutor data and 
 for prosecutors with an analytical interest. This repository was created and is 
-maintained by [Justice Innovation Lab](https://https://www.justiceinnovationlab.org/)and we welcome suggested changes and additions via github PR.
+maintained by [Justice Innovation Lab](https://https://www.justiceinnovationlab.org/) and we welcome suggested 
+changes and additions via github PR. Also, for those of you that are interested
+there is also a listserv - PALS - that is for crime analysts that you can be 
+added to by emailing ____.
 
 Since about 2015, many prosecutor offices began pursuing analytics to better 
 understand crime in their communities, to monitor office performance, and to 

@@ -17,12 +17,19 @@ Most jurisdictions also have their own diagrams available on their websites like
    - [Arresting a Person](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#arresting-a-person)
    - [Grand Jury](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#grand-jury)
    - [Prosecutor Review Starts](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#prosecutor-review-starts)
- - [Chapter 2 - Cases to Know]()
+   - [Courts Of First Appearance](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#courts-of-first-appearance)
+   - [What's A Case And What's A Charge](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#whats-a-case-and-whats-a-charge)
+   - [Diverting Instead Of Dismissing/Prosecuting](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#diverting-instead-of-dismissing-prosecuting)
+   - [Prosecuting A Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#prosecuting-a-case)
+   - [Disposing/Resolving A Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#disposing-resolving-a-case)
+   - [Postconviction Help](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#postconviction-help)
+ - [Chapter 2 - Cases to Know](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-2.mdx)
+ 
 </section>
 
 <section id="arresting-a-person">
 
-## Arresting a Person[^a]
+### Arresting a Person[^a]
 Police can stop an individual if they have __reasonable suspicion__. To make an arrest, police officers must have probable cause[^1] that the individual has committed some crime. This probable cause standard is more than the reasonable suspicion[^2] needed to stop someone, but a lower threshold than what a prosecutor needs to prosecute a case. Prosecutors are expected to prove cases __beyond a reasonable doubt__. These different thresholds are what lead some cases to being dismissed by prosecutors and never prosecuted. Offices have different practices regarding whether they will prosecute a case even if they cannot meet their burden before proceeding, but most will only prosecute if they believe they can meet that higher standard.
 
 Once an individual is stopped there are a number  of legal decisions that outline what constitutes an arrest, but in general you can think of an arrest as happening when the officer takes the person into custody. Officers generally stop someone based on criminal behavior they observe - sometimes using a pretextual stop[^3] - or because of a long term investigation or a call for service.
@@ -30,25 +37,27 @@ Once an individual is stopped there are a number  of legal decisions that outlin
 After an individual is arrested, they are generally taken to jail (jails are different from prisons – prisons are  where people are generally sent to serve longer sentences) where they are booked into the system. Jails are often maintained by different law enforcement agencies than the police, often sheriff’s departments. Arrestees might also be diverted at the point of arrest in jurisdictions with [Law Enforcement Assisted Diversion (LEAD) programs](https://www.leadbureau.org/&sa=D&source=docs&ust=1671122494724927&usg=AOvVaw0xbHC6j8TySOw9IotGEGtv)[^4]. 
 
 After booking:
-* Police present the case to prosecutor offices to determine if the case should be prosecuted. The presentation of the case varies by jurisdiction. In some jurisdictions, the police’s incident report is automatically transmitted to the prosecutor office into their Case Management System (CMS)[^5] to allow the office to begin reviewing the evidence. Often prosecutors will go on to meet with officers for clarification or to request more evidence. In jurisdictions where the incident reports are not automatically transferred, the incident reports have to be transmitted in some way - often via email. The reports are often then manually uploaded to the CMS or, in some cases, are only stored as print-outs in a physical file.
-* The arrestee also appears before a bond or detention court. Generally, this is required within 24 to 72 hours of an individual being arrested. At these hearings, prosecutors may be present depending on jurisdiction and may argue for a certain bond or detention determination. The judges for these cases are setting bond or making a detention determination. 
+* Police will present a case to a prosecutor to determine if the case should move forward. The presentation of the case varies by jurisdiction. In some jurisdictions, the police’s incident report is automatically transmitted to the prosecutor office into their Case Management System (CMS)[^5] to allow the office to begin reviewing the evidence. Often prosecutors will go on to meet with officers for clarification or to request more evidence. In jurisdictions where the incident reports are not automatically transferred, the incident reports have to be transmitted in some way - often via email (or even fax machine). The reports are often then manually uploaded to the CMS or, in some cases, are only stored as print-outs in a physical file.
+   * For a discussion on CMS go [here](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/discussions/3)
+* The arrestee will also appear  before a bond or detention court. Generally, this is required within 24 to 72 hours of an individual being arrested. At these hearings, prosecutors may be present depending on the jurisdiction and may argue for a certain bond or detention determination. The judges for these cases are setting bond, bail or some other form of pre-trial monitoring. 
 * “Bond” and “bail” are often used interchangeably, but technically they are different things.  Bail is the provisional release of the accused charged with a crime awaiting trial by the deposit of security. A bond is an agreement in which a third party, i.e. bond agent or bondsman, accepts responsibility for the “bail” of the person under indictment. The person under indictment generally pays the bondman a non-recoverable amount (typically 5-10% of bail).  If a defendant cannot afford the bail amount, they are often detained pending trial.   
 * Sometimes, in lower level offenses, courts will set a “personal recognisance bond” (PR bond), that only requires the defendant to commit to appearing in court.
-* In cases where a prosecutor believes that the defendant is a danger to the community or will fail to appear in court, they can ask the defendant to be detained without bail.
+* In cases where a prosecutor believes that the defendant is a danger to the community or will fail to appear in court, they can ask the defendant to be detained without bail.  This is commonly referred to as remand.
+ * Data regarding bail is notoriously hard to come by and often poorly maintained.
 </section>
 
 
 <section id="grand-jury">
 
 ### Grand Jury
-[Grand juries](https://www.uscourts.gov/services-forms/jury-service/types-juries) are special juries that are **empaneled** for a given length of time (usually 30 days) to review evidence and determine if an indictment[^6] is appropriate in a given case. The grand jury is reviewing the evidence to see if it meets the probable cause standard to issue an [indictment](https://www.justice.gov/usao/justice-101/charging). Since the grand jury is pre-indictment, their work is often done **before** an individual is even arrested. For this reason, among others, grand jury work is private, not open to the public, and does not include the accused or their attorney. These juries are also larger than the typical trial jury.
+[Grand juries](https://www.uscourts.gov/services-forms/jury-service/types-juries) are special juries that are **empaneled** for a given length of time (usually 30 days) to review evidence and determine if an [indictment](https://www.justice.gov/usao/justice-101/charging)[^6] is appropriate in a given case. The grand jury reviews the evidence in a case to see if it meets the probable cause standard to issue an indictment. Since the grand jury considers a case before indictment, their work is, at times, done before an individual is even arrested. For this reason, among others, grand jury work is private, not open to the public and does not include the accused or their attorney. These grand juries are also larger than the typical trial jury, which can be from six to twelve people.
 
 </section>
 
 <section id="prosecutor-review-starts">
 
-## Prosecutor Begins Reviewing A Case
-Once a case arrives at a prosecutor’s office, some offices have a screening unit of prosecutors that reviews a case and determines whether the case should be dismissed immediately, diverted, or moved on to a prosecuting attorney. Other offices do not have a screening unit and instead send cases directly to prosecuting attorneys who make the decision of whether to dismiss, divert, or prosecute a case.
+### Prosecutor Begins Reviewing A Case
+Once a case arrives at a prosecutor’s office, some offices have a screening unit of prosecutors that reviews a case and determines whether the case should be dismissed immediately, diverted, or moved on for prosecution. Other offices do not have a screening unit and instead send cases directly to prosecuting attorneys, pushing the decision to dismiss, divert or prosecute considerably further into the future.
 
 Cases can be dismissed for any number of reasons, but the most common are:
 * Insufficient evidence/lack of evidence 
@@ -57,13 +66,42 @@ Cases can be dismissed for any number of reasons, but the most common are:
 * Prosecutorial discretion/interest of justice - this is a common, ambiguous code that prosecutors use for everything from a defendant has no prior record and seems a good person to there are issues with the arresting officer i.e. the officer is on a [Brady list](https://en.wikipedia.org/wiki/Brady_disclosure).[^7]
 * Other reasons a case may be dismissed: death of a defendant; defendant found not competent to stand trial; case moved to another court. 
 
-The above dismissals are initiated by the prosecutor. Nolle Prosequi is the formal term for this, but also shortened to Nol Pros, Nolle, and other iterations. Some types of dismissals can be determined immediately upon reviewing the case, e.g. elements not met; whereas other reasons for dismissal may arise over time and after prosecution has begun.
+The above dismissals are initiated by the prosecutor.  Nolle Prosequi is the formal term for this, but also shortened to Nol Pros, Nolle, and other iterations. Some types of dismissals can be determined immediately upon reviewing the case, e.g. elements not met; whereas other reasons for dismissal may arise over time and after prosecution has begun.
 
 **NB - judges may also dismiss cases and generally do so if they find the prosecution’s evidence lacking; this is most likely to happen at a preliminary/probable cause hearing.**
 
 
 </section>
 
+<section id="courts-of-first-appearance">
+ ### Courts Of First Appearance
+ 
+ #### Preliminary Hearings
+ 
+ #### Magistrate Courts/Judges
+ 
+ </section>
+
+<section id="whats-a-case-and-whats-a-charge">
+ ### What's A Case And What's A Charge
+ </section>
+ 
+ <section id="diverting-instead-of-dismissing-prosecuting">
+ ### Diverting Instead Of Dismissing/Prosecuting
+ </section>
+ 
+ <section id="prosecuting-a-case">
+ ### Prosecuting A Case
+ </section>
+ 
+ <section id="disposing-resolving-a-case">
+ ### Disposing/Resolving A Case
+ </section>
+ 
+ <section id="postconviction-help">
+ ### Postconviction Help
+ </section>
+ 
 [^a]: For a fuller description of arrests please read Alexandra Natapoff’s Crime Without Punishment, specifically Chapter 3 which does an excellent job describing standard policing while including appropriate legal references.
 [^1]: Probable Cause: There was at least a 51% chance that you can show the individual did some illegal act.
 [^2]: Beyond a Reasonable Doubt: This is the highest burden of proof (yes, there’s more than probable cause and beyond a reasonable doubt). As a percentage, it’s supposed to be quite high and there should not be any other plausible interpretation of the evidence.

@@ -27,6 +27,7 @@ posting.
 
 - [dashboarding](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/dashboarding): Guides, templates, and a list of current prosecutor 
     dashboards.
+- [funding](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/funding): Resources for sharing with others about funding opportunities in the prosecutor analytics space.
 - [starting-out](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/starting-out): Guides for analysts to understand the [criminal justice 
     process and for getting and understanding prosecutor data](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/tree/main/starting-out/criminal_justice_explainer). Guides for 
     prosecutors on basic stats and analysis concepts.
@@ -39,7 +40,7 @@ posting.
 ### Discussions
 GitHub repos now include a discussions feature you can find along the top bar
 of the repo. Whereas issues are a place to raise technical problems, discussions
-is meant as a public forum to post questions and have... discussions.
+are meant as a public forum to post questions and have... discussions.
 
 #### Community Discussion Guidelines
 

@@ -254,8 +254,6 @@ def upload_to_az(
         )
 
 
-def upload_excel(data, account_url, container_name, file_name):
-    pass
 
 
 def upload_parquet(df, account_url, container_name, file_name, metadata=None):

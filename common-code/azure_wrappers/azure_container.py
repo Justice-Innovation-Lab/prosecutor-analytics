@@ -133,7 +133,7 @@ def get_az_data(
     version_id=None,
 ):
     """
-    Download a csv or excel file from Azure blob storage
+    Download a file from Azure blob storage
     Uses container client directly
     """
     # conn = BlobServiceClient(account_url, credential=default_credential)

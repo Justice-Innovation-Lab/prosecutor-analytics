@@ -38,7 +38,6 @@ DEFAULT_TENANT_ID = "YOUR-TENANT-ID-HERE"
 
 # reference: https://stackoverflow.com/questions/43878953/how-does-one-detect-if-one-is-running-within-a-docker-container-within-python
 SECRET_KEY = os.environ.get("AM_I_IN_A_DOCKER_CONTAINER", False)
-RUNNING_ON_WEBSITE = os.environ.get("WEBSITES_PORT", False)
 
 
 @lru_cache

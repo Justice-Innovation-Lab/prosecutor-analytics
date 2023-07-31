@@ -111,7 +111,6 @@ def list_container_files(
 ):
     """
     List the files available in a given blob container.
-    Updated to use container client directly rather than from SA client.
     """
     tenant_id = os.environ.get("TENANT_ID", DEFAULT_TENANT_ID)
     credential = get_credential(tenant_id)

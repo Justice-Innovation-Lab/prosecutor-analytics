@@ -301,7 +301,6 @@ def upload_file_from_path(
 ):
     """
     Uploads a file to a container from a given filepath.
-    Currently only supports PDFs.
     """
     # code inspired by: https://www.quickprogrammingtips.com/azure/how-to-upload-files-to-azure-storage-blobs-using-python.html
     # Content_types reference: http://www.iana.org/assignments/media-types/media-types.xhtml

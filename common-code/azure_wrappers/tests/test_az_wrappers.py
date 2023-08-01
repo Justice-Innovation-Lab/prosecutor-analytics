@@ -32,22 +32,34 @@ def test_upload_blob_with_metadata():
 def test_get_data():
     data = get_az_data(TEST_ACCOUNT_URL, TEST_CONTAINER, "test_metadata_upload.txt")
 
-# @pytest.mark.parametrize(
-#     "folder_path, dest_folder_name",
-#     [
-#         (DATA_PATH / "dummy_pdfs", "test_pdf_folder"),
-#         (DATA_PATH / "dummy_images", None),
-#         (DATA_PATH / "dummy_csvs", "test_csv_folder"),
-#         (DATA_PATH / "dummy_other_types", "test_other_types_folder"),
-#     ],
-# )
-# def test_upload_files_from_folder(folder_path, dest_folder_name):
-#     upload_files_from_folder(
-#         TEST_ACCOUNT_URL, TEST_CONTAINER, folder_path, dest_folder_name=dest_folder_name
-#     )
+def test_upload_files_from_folder():
+    upload_files_from_folder(
+        TEST_ACCOUNT_URL, TEST_CONTAINER, 'data/', dest_folder_name="test_uploads"
+    )
 
-
-
+@pytest.mark.parametrize(
+"account_url, container_name, file_name",
+[
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/auto.dta"),
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/dummy_data.csv"),
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/sample_image.jpg"),
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/sample_img.png"),
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/sample.pdf"),
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/test_text.txt"),
+    (TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/test.tsv"),
+],
+)
+def test_download_data(account_url, container_name, file_name, version_id):
+    try:
+        data = get_az_data(
+            account_url,
+            container_name,
+            file_name,
+        )
+        if isinstance(data, pd.DataFrame):
+            assert not any([col for col in data.columns if col.startswith("Unnamed:")])
+    except ResourceNotFoundError:
+        pytest.mark.xfail(reason=f"{file_name} not found")
 
 def test_download_data_resource_error():
     with pytest.raises(ResourceNotFoundError):

@@ -9,22 +9,23 @@ import pandas as pd
 import pytest
 from azure.core.exceptions import ResourceNotFoundError
 
-from azure_box.azure_wrappers import *
+from ..azure_container import *
 
-TEST_ACCOUNT_URL = "YOUR_TEST_ACCOUNT_URL"
-TEST_CONTAINER = "YOUR_TEST_CONTAINER"
-
-# Skip these tests unless --all is used in the pytest invocation:
-pytestmark = pytest.mark.with_credentials
+DEFAULT_ACCOUNT_URL = "YOUR_ACCOUNT_URL"
+TEST_ACCOUNT_URL = os.environ.get('ACCOUNT_URL', DEFAULT_ACCOUNT_URL)
+DEFAULT_TEST_CONTAINER = "YOUR_TEST_CONTAINER"
+TEST_CONTAINER = os.environ.get('CONTAINER_NAME', DEFAULT_TEST_CONTAINER)
 
 def test_upload_blob_with_metadata():
-    upload_az_data(
+    print(TEST_ACCOUNT_URL)
+    print(TEST_CONTAINER)
+    upload_to_az(
         "this is test data",
         TEST_ACCOUNT_URL,
         TEST_CONTAINER,
         "test_metadata_upload.txt",
         metadata={"test_key": "test_val"},
-        uploading_package="azure_box",
+        uploading_package="azure_wrappers",
         auto_overwrite=True,
     )
 
@@ -48,27 +49,14 @@ def test_get_data():
 
 
 
-@pytest.mark.parametrize(
-    "account_url, container_name, file_name, version_id",
-    [
-        (TEST_ACCOUNT_URL, "fakecontainer", "test_parq.parquet", None),
-    ],
-)
-def test_download_data_resource_error(
-    account_url, container_name, file_name, version_id
-):
+def test_download_data_resource_error():
     with pytest.raises(ResourceNotFoundError):
         data = get_az_data(
-            account_url, container_name, file_name, version_id=version_id
+            TEST_ACCOUNT_URL, "fakecontainer", "test_parq.parquet"
         )
 
-
-@pytest.mark.parametrize(
-    "account_url, container_name",
-    [(TEST_ACCOUNT_URL, TEST_CONTAINER), (PRIVATE_ACCOUNT_URL, PRIVATE_CONTAINER)],
-)
-def test_list_container_files(account_url, container_name):
-    list_container_files(account_url, container_name)
+def test_list_container_files():
+    list_container_files(TEST_ACCOUNT_URL, TEST_CONTAINER)
 
 
 

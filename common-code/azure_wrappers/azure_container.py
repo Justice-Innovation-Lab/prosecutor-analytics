@@ -11,7 +11,6 @@ import numpy as np
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
-import PyPDF2
 from azure.core.exceptions import ResourceNotFoundError
 from azure.identity import (
     AzureCliCredential,
@@ -20,7 +19,6 @@ from azure.identity import (
     EnvironmentCredential,
     ManagedIdentityCredential,
 )
-from azure.keyvault.secrets import SecretClient
 from azure.storage.blob import (
     BlobClient,
     BlobServiceClient,
@@ -28,11 +26,11 @@ from azure.storage.blob import (
     ContentSettings,
 )
 
-from azure_box import data_storage as ds
-from azure_box import version_info
+from azure_wrappers import version_info
+from azure_wrappers.data_parsing import parse_data_source
 
 LOGGER = Logger(__file__)
-DEFAULT_TENANT_ID = "YOUR-TENANT-ID-HERE"
+DEFAULT_TENANT_ID = "YOUR_TENANT_ID"
 # NOTE: where the code uses an environment variable e.g. tenant_id = os.environ.get("TENANT_ID", DEFAULT_TENANT_ID); we have
 # set that environment variable in our docker files.
 
@@ -158,7 +156,7 @@ def get_az_data(
     #     version_id=version_id,
     # )
     # data = data_source.data
-    stream = io.BytesIO(container_client.get_blob_client(file_name).download_blob(version_id=version_id))
+    stream = container_client.get_blob_client(file_name).download_blob(version_id=version_id)
     data = parse_data_source(
                 file_name,
                 stream,

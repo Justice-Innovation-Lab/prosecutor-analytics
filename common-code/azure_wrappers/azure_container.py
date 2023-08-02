@@ -133,7 +133,6 @@ def get_az_data(
     Download a file from Azure blob storage
     Uses container client directly
     """
-    # conn = BlobServiceClient(account_url, credential=default_credential)
     try:
         tenant_id = os.environ.get("TENANT_ID", DEFAULT_TENANT_ID)
         container_client = ContainerClient(
@@ -145,9 +144,7 @@ def get_az_data(
             "Could not connect to azure for the container: {container_name}"
         )
 
-    if return_stream and ".pdf" in file_name:
-        data = stream.readall()
-        return data
+
 
     # data_source = ds.DataSource(
     #     container_client,
@@ -157,6 +154,9 @@ def get_az_data(
     # )
     # data = data_source.data
     stream = container_client.get_blob_client(file_name).download_blob(version_id=version_id)
+    if return_stream and ".pdf" in file_name:
+        data = stream.readall()
+        return data
     data = parse_data_source(
                 file_name,
                 stream,
@@ -349,5 +349,3 @@ def upload_file_from_path(
             timeout=14400,
             metadata=metadata,
         )
-
-

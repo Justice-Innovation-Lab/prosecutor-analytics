@@ -85,25 +85,7 @@ def test_list_container_files():
     list_container_files(TEST_ACCOUNT_URL, TEST_CONTAINER)
 
 
-
-
-
-# def test_download_stream():
-#     get_az_data(
-#         TEST_ACCOUNT_URL, TEST_CONTAINER, "uploaded_sample.pdf", return_stream=True
-#     )
-
-
-# def test_upload_pdf():
-#     data = get_az_data(
-#         TEST_ACCOUNT_URL, TEST_CONTAINER, "pdf-test.pdf", return_readable=False
-#     )
-#     print("type of downloaded pdf is: ", type(data))
-#     upload_az_data(
-#         data,
-#         TEST_ACCOUNT_URL,
-#         TEST_CONTAINER,
-#         "uploaded_sample.pdf",
-#         auto_overwrite=True,
-#     )
-
+def test_download_stream():
+    get_az_data(
+        TEST_ACCOUNT_URL, TEST_CONTAINER, "test_uploads/sample.pdf", return_stream=True
+    )

@@ -70,8 +70,6 @@ def test_download_data(account_url, container_name, file_name):
         )
         if isinstance(data, pd.DataFrame):
             assert not any([col for col in data.columns if col.startswith("Unnamed:")])
-            print(file_name)
-            print(data.head())
     except ResourceNotFoundError:
         pytest.mark.xfail(reason=f"{file_name} not found")
 

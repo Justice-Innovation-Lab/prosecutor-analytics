@@ -144,15 +144,6 @@ def get_az_data(
             "Could not connect to azure for the container: {container_name}"
         )
 
-
-
-    # data_source = ds.DataSource(
-    #     container_client,
-    #     file_name,
-    #     return_stream=return_stream,
-    #     version_id=version_id,
-    # )
-    # data = data_source.data
     stream = container_client.get_blob_client(file_name).download_blob(version_id=version_id)
     if return_stream and ".pdf" in file_name:
         data = stream.readall()

@@ -15,8 +15,8 @@ Most jurisdictions also have their own diagrams available on their websites like
 ## Table of Contents
  - [Chapter 1 - Stages of a Case](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx)
    - [Arresting a Person](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#arresting-a-person)
-   - [Grand Jury](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#grand-jury)
    - [Prosecutor Review Starts](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#prosecutor-review-starts)
+   - [Grand Jury](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#grand-jury)
    - [Courts Of First Appearance](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#courts-of-first-appearance)
    - [What's A Case And What's A Charge](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#whats-a-case-and-whats-a-charge)
    - [Diverting Instead Of Dismissing/Prosecuting](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/blob/main/starting-out/criminal_justice_explainer/chapter-1.mdx#diverting-instead-of-dismissing-prosecuting)
@@ -43,19 +43,11 @@ After an individual is arrested, they are generally taken to jail (jails are dif
 After booking:
 * Police will present a case to a prosecutor to determine if the case should move forward. The presentation of the case varies by jurisdiction. In some jurisdictions, the police’s incident report is automatically transmitted to the prosecutor office into their Case Management System (CMS)[^5] to allow the office to begin reviewing the evidence. Often prosecutors will go on to meet with officers for clarification or to request more evidence. In jurisdictions where the incident reports are not automatically transferred, the incident reports have to be transmitted in some way - often via email (or even fax machine). The reports are often then manually uploaded to the CMS or, in some cases, are only stored as print-outs in a physical file.
    * For a discussion on CMS go [here](https://github.com/Justice-Innovation-Lab/prosecutor-analytics/discussions/3)
-* The arrestee will also appear  before a bond or detention court. Generally, this is required within 24 to 72 hours of an individual being arrested. At these hearings, prosecutors may be present depending on the jurisdiction and may argue for a certain bond or detention determination. The judges for these cases are setting bond, bail or some other form of pre-trial monitoring. 
+* The arrestee will also appear before a bond or detention court. This initial hearing is often the "arraignment" hearing where the defendant is given formal notice of the charges and can offer a plea of guilty or not guilty. Generally, this hearing is required within 24 to 72 hours of an individual being arrested. At these hearings, prosecutors may be present depending on the jurisdiction and may argue for a certain bond or detention determination. The judges for these cases are setting bond, bail or some other form of pre-trial monitoring. 
 * “Bond” and “bail” are often used interchangeably, but technically they are different things.  Bail is the provisional release of the accused charged with a crime awaiting trial by the deposit of security. A bond is an agreement in which a third party, i.e. bond agent or bondsman, accepts responsibility for the “bail” of the person under indictment. The person under indictment generally pays the bondman a non-recoverable amount (typically 5-10% of bail).  If a defendant cannot afford the bail amount, they are often detained pending trial.   
 * Sometimes, in lower level offenses, courts will set a “personal recognisance bond” (PR bond), that only requires the defendant to commit to appearing in court.
 * In cases where a prosecutor believes that the defendant is a danger to the community or will fail to appear in court, they can ask the defendant to be detained without bail.  This is commonly referred to as remand.
  * Data regarding bail is notoriously hard to come by and often poorly maintained.
-</section>
-
-
-<section id="grand-jury">
-
-### Grand Jury
-[Grand juries](https://www.uscourts.gov/services-forms/jury-service/types-juries) are special juries that are **empaneled** for a given length of time (usually 30 days) to review evidence and determine if an [indictment](https://www.justice.gov/usao/justice-101/charging)[^6] is appropriate in a given case. The grand jury reviews the evidence in a case to see if it meets the probable cause standard to issue an indictment. Since the grand jury considers a case before indictment, their work is, at times, done before an individual is even arrested. For this reason, among others, grand jury work is private, not open to the public and does not include the accused or their attorney. These grand juries are also larger than the typical trial jury, which can be from six to twelve people.
-
 </section>
 
 <section id="prosecutor-review-starts">
@@ -74,19 +66,27 @@ The above dismissals are initiated by the prosecutor.  Nolle Prosequi is the for
 
 **NB - judges may also dismiss cases and generally do so if they find the prosecution’s evidence lacking; this is most likely to happen at a preliminary/probable cause hearing.**
 
+<section id="grand-jury">
+
+### Grand Jury
+[Grand juries](https://www.uscourts.gov/services-forms/jury-service/types-juries) are special juries that are **empaneled** for a given length of time (usually 30 days) to review evidence and determine if an [indictment](https://www.justice.gov/usao/justice-101/charging)[^6] is appropriate in a given case. The grand jury reviews the evidence in a case to see if it meets the probable cause standard to issue an indictment. Since the grand jury considers a case before indictment, their work is, at times, done before an individual is even arrested. For this reason, among others, grand jury work is private, not open to the public and does not include the accused or their attorney. These grand juries are also larger than the typical trial jury, which can be from six to twelve people. 
+
+Grand jury indictments are not required for every case and can occur at different times depending on the nature of the case. In general, they will happen early in the process and are very formulaic.
+
+</section>
 
 </section>
 
 <section id="courts-of-first-appearance">
  
  ### Courts Of First Appearance
- Courts of first appearance vary significantly from jurisdiction. Everything from the timing, to the process, to terminology, to actors involved can all be different between jurisdictions. Given this diversity, the author below presents a generalized outline of these courts based on experience in 4 jurisdictions.
+ Courts of first appearance vary significantly from jurisdiction, this is often referred to as arraignment. Everything from the timing, to the process, to terminology, to actors involved can all be different between jurisdictions. Given this diversity, the author below presents a generalized outline of these courts based on experience in 4 jurisdictions.
  
  #### Preliminary Hearings
  A preliminary hearing is held after an individual has been arrested. A prosecutor must prove to the judge that there is probable cause to hold a trial. Where a judge does find probable cause, the case proceeds and is “bound over”. In finding probable cause, the judge may change the charges in the case depending on the evidence, including by reducing the severity of the charges. Where a judge does not find probable cause they may dismiss the case.
  
  #### Magistrate Courts/Judges
- In some states, such as Georgia,  magistrate judges will handle most pre-trial matters such as the preliminary hearing, arraignment of charges, and bail. Magistrate courts often handle lower-level criminal and civil cases such as approving warrants, county ordinances, and smaller civil claims. In some states, you do not need a law degree to become a magistrate judge.
+ In some states, such as Georgia,  magistrate judges will handle most pre-trial matters such as the arraignment of charges, bail, and preliminary hearing. Magistrate courts often handle lower-level criminal and civil cases such as approving warrants, county ordinances, and smaller civil claims. In some states, you do not need a law degree to become a magistrate judge.
  
  </section>
 
